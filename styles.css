@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    background: #0f0f23;
+    color: #00ff9f;
+    min-height: 100vh;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+#parent {
+    font-size: 1rem;
+    display: inline-block;
+    overflow: hidden;
+    color: orangered;
+    font-family: "Irish Grover", sans-serif;
+    letter-spacing: 1px;
+}
+
+.logo {
+    font-size: 2rem;
+    line-height: .8;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    color: #ffff;
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+}
+
+#tagline {
+    font-size: .5rem;
+    overflow: hidden;
+    color: rgba(0, 255, 255, 0.641);
+    margin-top: 5px;
+    text-align: right;
+    position: relative;
+}
+
+#tagline:hover {
+    color: aqua;
+}
+
+.back-button {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.app {
+    background: rgba(20, 20, 50, 0.8);
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 255, 159, 0.3);
+    border: 1px solid #00ff9f;
+    position: relative;
+    margin: auto;
+}
+
+.app h1 {
+    font-size: 24px;
+    color: #00ffff;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#timer {
+    font-size: 16px;
+    color: #00ffff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.quiz h2 {
+    font-size: 18px;
+    color: #00ff9f;
+    margin-bottom: 15px;
+}
+
+.btn {
+    background: #1a1a3a;
+    color: #00ff9f;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid #00ff9f;
+    padding: 10px;
+    margin: 8px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not(:disabled) {
+    background: #2a2a5a;
+}
+
+#next-btn {
+    background: #00ff9f;
+    color: #0f0f23;
+    font-weight: 500;
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    outline: none;
+    border: none;
+}
+
+.correct { background: #1dff1d; color: #000000; }
+.incorrect { background: #c30000; color: #ffffff; }
+
+.explanation-container {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: rgba(0, 255, 159, 0.1);
+    border-radius: 4px;
+    border: 1px solid #00ff9f;
+    display: none;
+    height: 100px;
+    overflow: auto;
+}
+
+#results {
+    text-align: center;
+}
+
+#results h2 {
+    margin-bottom: 15px;
+    color: #00ffff;
+}
+
+#score, #total-time {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+#question-times {
+    text-align: left;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}

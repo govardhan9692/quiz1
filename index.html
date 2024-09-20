@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - HTML LEVEL 1</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="header">
+        <!-- <a href="../../skill_course.html" class="back-button">←</a> -->
+        <nav id="navBar">
+            <div class="logo">
+                <div id="parent">ManaClg</div><br>Levelup <br>
+                <div id="tagline">-Let's Go Beyond the Education</div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="app">
+        <h1 id="context">Frontend Enterance Test</h1>
+        <div id="timer">00:00</div>
+        <div class="quiz">
+            <h2 id="question">Question Goes Here</h2>
+            <div id="answer-buttons"></div>
+            <button id="next-btn">Next</button>
+            <div class="explanation-container">
+                <h3>Explanation:</h3>
+                <p class="explanation"></p>
+            </div>
+        </div>
+        <div id="results" style="display: none;">
+            <h2>Quiz Results</h2>
+            <p id="score"></p>
+            <p id="total-time"></p>
+            <div id="question-times"></div>
+        </div>
+    </div>
+
+    <script src="./questions.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
