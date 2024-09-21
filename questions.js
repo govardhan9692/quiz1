@@ -298,7 +298,7 @@ const questions = [{
         "text": "C) EOF",
         "correct": false
     }, {
-        "text": "D) EPH",
+        "text": "D) EJH",
         "correct": false
     }],
     "explanation": "Correct Answer: A) EPH.\n\nIn this code, each letter is replaced by the next letter in the alphabet. So D becomes E, O becomes P, and G becomes H."

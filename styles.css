@@ -188,13 +188,26 @@ body {
     cursor: not-allowed;
     opacity: 0.7;
 }
+#registration-link{
+    color: greenyellow;
+}
 
 #registration-link a {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background: #00ff9f;
-    color: #0f0f23;
+    background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
+    color: white;
+    box-shadow: 0 0 25px orangered , 0 0 50px orangered;
     text-decoration: none;
     border-radius: 4px;
+    transition: 0.3s ease;
+}
+#registration-link a:hover{
+    transform: scale(1.1);
+}
+
+
+#roll-number{
+    text-transform: uppercase;
 }
