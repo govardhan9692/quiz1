@@ -25,10 +25,11 @@ document.getElementById("details-form").addEventListener("submit", function(e) {
     e.preventDefault();
     const name = document.getElementById("name").value;
     const rollNumber = document.getElementById("roll-number").value;
+    const phone = document.getElementById("phone").value;
     const branch = document.getElementById("branch").value;
 
-    if (name && rollNumber && branch) {
-        const userInfo = { name, rollNumber, branch };
+    if (name && rollNumber && phone && branch) {
+        const userInfo = { name, rollNumber, phone, branch };
         localStorage.setItem('userInfo', JSON.stringify(userInfo));
         userForm.style.display = "none";
         quizContainer.style.display = "block";
@@ -37,7 +38,6 @@ document.getElementById("details-form").addEventListener("submit", function(e) {
         alert("Please provide all the required information.");
     }
 });
-
 function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
@@ -158,6 +158,7 @@ function sendResultsToSheet() {
     if (storedUser) {
         formData.append('name', storedUser.name);
         formData.append('roll_number', storedUser.rollNumber);
+        formData.append('phone', storedUser.phone);
         formData.append('branch', storedUser.branch);
     }
 
