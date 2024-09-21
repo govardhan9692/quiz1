@@ -8,7 +8,6 @@
 </head>
 <body>
     <div class="header">
-        <!-- <a href="../../skill_course.html" class="back-button">←</a> -->
         <nav id="navBar">
             <div class="logo">
                 <div id="parent">ManaClg</div><br>Levelup <br>
@@ -18,22 +17,51 @@
     </div>
 
     <div class="app">
-        <h1 id="context">Frontend Enterance Test</h1>
-        <div id="timer">00:00</div>
-        <div class="quiz">
-            <h2 id="question">Question Goes Here</h2>
-            <div id="answer-buttons"></div>
-            <button id="next-btn">Next</button>
-            <div class="explanation-container">
-                <h3>Explanation:</h3>
-                <p class="explanation"></p>
+        <h1 id="context">Frontend Entrance Test</h1>
+        
+        <div id="user-form" class="form-container">
+            <h2>Enter Your Details</h2>
+            <form id="details-form">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="roll-number" placeholder="Roll Number" required>
+                <select id="branch" required>
+                    <option value="">Select Branch</option>
+                    <option value="CSM">CSM</option>
+                    <option value="CSD">CSD</option>
+                    <option value="CSC">CSC</option>
+                    <option value="CAI">CAI</option>
+                    <option value="AID">AID</option>
+                </select>
+                <button type="submit">Start Quiz</button>
+            </form>
+        </div>
+
+        <div id="quiz-container" style="display: none;">
+            <div id="timer">00:00</div>
+            <div class="quiz">
+                <h2 id="question">Question Goes Here</h2>
+                <div id="answer-buttons"></div>
+                <button id="next-btn">Next</button>
+                <div class="explanation-container">
+                    <h3>Explanation:</h3>
+                    <p class="explanation"></p>
+                </div>
             </div>
         </div>
+
         <div id="results" style="display: none;">
             <h2>Quiz Results</h2>
             <p id="score"></p>
             <p id="total-time"></p>
             <div id="question-times"></div>
+            <div id="registration-link" style="display: none;">
+                <p>Congratulations! You passed. Register now for the frontend development workshop:</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSde1ac3CDBkt0nnzOD0d5CjXuEanzUq2s0KQ4zn9xZlQYgnPA/viewform" target="_blank">Register Here</a>
+            </div>
+            <div id="fail-message" style="display: none;">
+                <p>You failed. Try again!</p>
+            </div>
+            <button id="retry-btn" style="display: none;">Try Again</button>
         </div>
     </div>
 
